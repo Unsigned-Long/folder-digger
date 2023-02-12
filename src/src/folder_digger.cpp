@@ -21,9 +21,17 @@ namespace ns_folger {
             if (!std::filesystem::is_regular_file(entry)) { continue; }
             auto iter = std::find_if(
                     _excludePath.begin(), _excludePath.end(), [&entry](const std::filesystem::path &path) {
-                        const auto str1 = path.string();
-                        const auto str2 = entry.path().string();
-                        return str1.size() <= str2.size() && str2.substr(0, str1.size()) == str1;
+                        if (std::filesystem::is_directory(path)) {
+                            // directory vs file
+                            auto str1 = path.string();
+                            auto str2 = entry.path().parent_path().string();
+                            return str2.size() >= str1.size() && str2.substr(0, str1.size()) == str1;
+                        } else if (std::filesystem::is_regular_file(path)) {
+                            // file vs file
+                            return path.string() == entry.path().string();
+                        } else {
+                            return false;
+                        }
                     }
             );
             if (iter != _excludePath.cend()) { continue; }

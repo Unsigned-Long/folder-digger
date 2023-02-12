@@ -1,11 +1,18 @@
 {
     "target_path": "/home/csl/CppWorks/artwork/folder-digger",
     "exclude_path": [
+        "/home/csl/CppWorks/artwork/folder-digger/.git",
         "/home/csl/CppWorks/artwork/folder-digger/.idea",
         "/home/csl/CppWorks/artwork/folder-digger/cmake-build-debug",
         "/home/csl/CppWorks/artwork/folder-digger/cmake-build-release"
     ],
     "files": [
+        {
+            "key": "",
+            "value": [
+                "/home/csl/CppWorks/artwork/folder-digger/.gitignore"
+            ]
+        },
         {
             "key": ".cpp",
             "value": [
@@ -41,6 +48,10 @@
     ],
     "file_type_count": [
         {
+            "key": "",
+            "value": 1
+        },
+        {
             "key": ".cpp",
             "value": 2
         },
@@ -63,8 +74,12 @@
     ],
     "file_line_count": [
         {
+            "key": "",
+            "value": 3
+        },
+        {
             "key": ".cpp",
-            "value": 119
+            "value": 127
         },
         {
             "key": ".h",
@@ -72,11 +87,11 @@
         },
         {
             "key": ".json",
-            "value": 72
+            "value": 101
         },
         {
             "key": ".py",
-            "value": 1
+            "value": 2
         },
         {
             "key": ".txt",
