@@ -1,0 +1,86 @@
+{
+    "target_path": "/home/csl/CppWorks/artwork/folder-digger",
+    "exclude_path": [
+        "/home/csl/CppWorks/artwork/folder-digger/.idea",
+        "/home/csl/CppWorks/artwork/folder-digger/cmake-build-debug",
+        "/home/csl/CppWorks/artwork/folder-digger/cmake-build-release"
+    ],
+    "files": [
+        {
+            "key": ".cpp",
+            "value": [
+                "/home/csl/CppWorks/artwork/folder-digger/src/src/folder_digger.cpp",
+                "/home/csl/CppWorks/artwork/folder-digger/src/main.cpp"
+            ]
+        },
+        {
+            "key": ".h",
+            "value": [
+                "/home/csl/CppWorks/artwork/folder-digger/src/include/folder_digger.h"
+            ]
+        },
+        {
+            "key": ".json",
+            "value": [
+                "/home/csl/CppWorks/artwork/folder-digger/data/file_line_count.json"
+            ]
+        },
+        {
+            "key": ".py",
+            "value": [
+                "/home/csl/CppWorks/artwork/folder-digger/script/drawer.py"
+            ]
+        },
+        {
+            "key": ".txt",
+            "value": [
+                "/home/csl/CppWorks/artwork/folder-digger/CMakeLists.txt",
+                "/home/csl/CppWorks/artwork/folder-digger/src/CMakeLists.txt"
+            ]
+        }
+    ],
+    "file_type_count": [
+        {
+            "key": ".cpp",
+            "value": 2
+        },
+        {
+            "key": ".h",
+            "value": 1
+        },
+        {
+            "key": ".json",
+            "value": 1
+        },
+        {
+            "key": ".py",
+            "value": 1
+        },
+        {
+            "key": ".txt",
+            "value": 2
+        }
+    ],
+    "file_line_count": [
+        {
+            "key": ".cpp",
+            "value": 119
+        },
+        {
+            "key": ".h",
+            "value": 52
+        },
+        {
+            "key": ".json",
+            "value": 72
+        },
+        {
+            "key": ".py",
+            "value": 1
+        },
+        {
+            "key": ".txt",
+            "value": 25
+        }
+    ]
+}
