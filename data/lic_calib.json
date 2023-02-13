@@ -1,0 +1,251 @@
+{
+    "target_path": "/home/csl/ros_ws/LIC-Calib/src",
+    "exclude_path": [
+        "/home/csl/ros_ws/LIC-Calib/src/lic_calib/output",
+        "/home/csl/ros_ws/LIC-Calib/src/lic_calib/thirdparty",
+        "/home/csl/ros_ws/LIC-Calib/src/openmvg_sfm/output",
+        "/home/csl/ros_ws/LIC-Calib/src/openmvg_sfm/thirdparty"
+    ],
+    "files": [
+        {
+            "key": ".cpp",
+            "value": [
+                "/home/csl/ros_ws/LIC-Calib/src/sim_scene/src/odom_pub.cpp",
+                "/home/csl/ros_ws/LIC-Calib/src/sim_scene/src/generate_actor.cpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/exe/learn.cpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/exe/main.cpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/src/config/calib_config.cpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/src/sensor/lidar.cpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/src/sensor/imu.cpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/src/sensor/camera.cpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/src/core/scan_undistortion.cpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/src/core/rotation_estimator.cpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/src/core/se3_spline.cpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/src/core/lidar_odometer.cpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/src/core/sfm_association.cpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/src/core/system_observability.cpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/src/core/trajectory_estimator.cpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/src/core/surfel_association.cpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/src/viewer/colorized_map.cpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/src/viewer/pose_viewer.cpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/src/calib/calib_solver.cpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/src/calib/lidar_data_loader.cpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/src/calib/calib_data_manager.cpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/src/calib/calib_param_manager.cpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/test/test_main.cpp",
+                "/home/csl/ros_ws/LIC-Calib/src/openmvg_sfm/src/openmvg_sfm.cpp",
+                "/home/csl/ros_ws/LIC-Calib/src/openmvg_sfm/src/openmvg_sfm/openmvg_config.cpp",
+                "/home/csl/ros_ws/LIC-Calib/src/openmvg_sfm/src/openmvg_sfm_viewer.cpp",
+                "/home/csl/ros_ws/LIC-Calib/src/openmvg_sfm/src/openmvg_raw_txt.cpp"
+            ]
+        },
+        {
+            "key": ".h",
+            "value": [
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/config/calib_config.h",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/basalt/utils/assert.h",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/basalt/spline/so3_spline.h",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/basalt/spline/se3_spline.h",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/basalt/spline/spline_common.h",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/basalt/spline/rd_spline.h",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/basalt/spline/ceres_spline_helper.h",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/basalt/spline/ceres_spline_helper_jet.h",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/basalt/spline/spline_segment.h",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/sensor/camera.h",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/sensor/lidar.h",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/sensor/imu.h",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/core/sfm_association.h",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/core/se3_spline.h",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/core/trajectory_estimator.h",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/core/lidar_odometer.h",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/core/surfel_association.h",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/core/rotation_estimator.h",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/core/scan_undistortion.h",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/core/system_observability.h",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/viewer/pose_viewer.h",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/viewer/colorized_map.h",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/calib/calib_solver.h",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/calib/calib_data_manager.h",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/calib/lidar_data_loader.h",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/calib/calib_param_manager.h",
+                "/home/csl/ros_ws/LIC-Calib/src/openmvg_sfm/include/openmvg_sfm/openmvg_config.h"
+            ]
+        },
+        {
+            "key": ".hpp",
+            "value": [
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/util/status.hpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/util/macros.hpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/util/enum_cast.hpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/util/type_define.hpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/util/utils.hpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/basalt/utils/eigen_utils.hpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/basalt/utils/sophus_utils.hpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/basalt/spline/ceres_local_param.hpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/basalt/spline/calib_bias.hpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/functors/imu_functor.hpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/functors/point_plane_functor.hpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/functors/functor_typedef.hpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/functors/scale_functor.hpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/functors/imu_gyro_functor.hpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/functors/imu_recovery_functor.hpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/functors/reproject_functor.hpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/functors/se3_functor.hpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/functors/imu_traj_recovery_functor.hpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/core/pose.hpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/viewer/color_mapping.hpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/nofree/multi_imu_spline.hpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/nofree/trans_plane.hpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/nofree/learn_se3_spline.hpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/nofree/mapping_point_cloud.hpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/nofree/statistics_param_files.hpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/nofree/video_maker.hpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/nofree/plane_observability.hpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/nofree/simu_rosbag.hpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/nofree/bspline_2d_exam.hpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/pclomp/voxel_grid_covariance_omp.hpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/pclomp/ndt_omp.hpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/include/pclomp/gicp_omp.hpp",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/test/include/test_config.hpp",
+                "/home/csl/ros_ws/LIC-Calib/src/openmvg_sfm/include/openmvg_sfm/SfM_ply_helper.hpp",
+                "/home/csl/ros_ws/LIC-Calib/src/openmvg_sfm/include/openmvg_sfm/global_SfM.hpp",
+                "/home/csl/ros_ws/LIC-Calib/src/openmvg_sfm/include/openmvg_sfm/compute_matches.hpp",
+                "/home/csl/ros_ws/LIC-Calib/src/openmvg_sfm/include/openmvg_sfm/SfMInit_image_listing.hpp",
+                "/home/csl/ros_ws/LIC-Calib/src/openmvg_sfm/include/openmvg_sfm/pair_generator.hpp",
+                "/home/csl/ros_ws/LIC-Calib/src/openmvg_sfm/include/openmvg_sfm/geometric_filter.hpp",
+                "/home/csl/ros_ws/LIC-Calib/src/openmvg_sfm/include/openmvg_sfm/compute_features.hpp"
+            ]
+        },
+        {
+            "key": ".launch",
+            "value": [
+                "/home/csl/ros_ws/LIC-Calib/src/sim_scene/launch/generate-actor.launch",
+                "/home/csl/ros_ws/LIC-Calib/src/sim_scene/launch/rqt-plot.launch",
+                "/home/csl/ros_ws/LIC-Calib/src/sim_scene/launch/rosbag-record.launch",
+                "/home/csl/ros_ws/LIC-Calib/src/sim_scene/launch/sim-scene-actor.launch",
+                "/home/csl/ros_ws/LIC-Calib/src/sim_scene/launch/rviz.launch",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/launch/lic-calib-learn.launch",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/launch/lic-calib-test.launch",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/launch/lic-calib.launch",
+                "/home/csl/ros_ws/LIC-Calib/src/openmvg_sfm/launch/openmvg-sfm-raw-txt.launch",
+                "/home/csl/ros_ws/LIC-Calib/src/openmvg_sfm/launch/openmvg-sfm-viewer.launch",
+                "/home/csl/ros_ws/LIC-Calib/src/openmvg_sfm/launch/openmvg-sfm.launch"
+            ]
+        },
+        {
+            "key": ".py",
+            "value": [
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/scripts/real_iter_info_drawer.py",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/scripts/simu_iter_info_drawer.py",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/scripts/real_abs_error_drawer.py",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/scripts/simu_abs_error_drawer.py",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/scripts/bspline_2d_drawer.py",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/scripts/residuals_drawer.py"
+            ]
+        },
+        {
+            "key": ".txt",
+            "value": [
+                "/home/csl/ros_ws/LIC-Calib/src/sim_scene/CMakeLists.txt",
+                "/home/csl/ros_ws/LIC-Calib/src/CMakeLists.txt",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/CMakeLists.txt",
+                "/home/csl/ros_ws/LIC-Calib/src/openmvg_sfm/CMakeLists.txt",
+                "/home/csl/ros_ws/LIC-Calib/src/openmvg_sfm/config/sensor_width_camera_database.txt"
+            ]
+        },
+        {
+            "key": ".xacro",
+            "value": [
+                "/home/csl/ros_ws/LIC-Calib/src/sim_scene/model/xacro/sim-robot.xacro",
+                "/home/csl/ros_ws/LIC-Calib/src/sim_scene/model/xacro/camera.xacro",
+                "/home/csl/ros_ws/LIC-Calib/src/sim_scene/model/xacro/sensor-lidar.xacro",
+                "/home/csl/ros_ws/LIC-Calib/src/sim_scene/model/xacro/util.xacro",
+                "/home/csl/ros_ws/LIC-Calib/src/sim_scene/model/xacro/sensor-imu.xacro",
+                "/home/csl/ros_ws/LIC-Calib/src/sim_scene/model/xacro/motion.xacro",
+                "/home/csl/ros_ws/LIC-Calib/src/sim_scene/model/xacro/imu.xacro",
+                "/home/csl/ros_ws/LIC-Calib/src/sim_scene/model/xacro/wheels.xacro",
+                "/home/csl/ros_ws/LIC-Calib/src/sim_scene/model/xacro/lidar.xacro",
+                "/home/csl/ros_ws/LIC-Calib/src/sim_scene/model/xacro/sensor-camera.xacro"
+            ]
+        },
+        {
+            "key": ".yaml",
+            "value": [
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/config/lic-config-oa.yaml",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/config/lic-config-simu2.yaml",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/config/lic-config-real.yaml",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/config/lic-config-simu.yaml",
+                "/home/csl/ros_ws/LIC-Calib/src/lic_calib/config/lic-config-test.yaml",
+                "/home/csl/ros_ws/LIC-Calib/src/openmvg_sfm/config/config.yaml"
+            ]
+        }
+    ],
+    "file_type_count": [
+        {
+            "key": ".cpp",
+            "value": 27
+        },
+        {
+            "key": ".h",
+            "value": 27
+        },
+        {
+            "key": ".hpp",
+            "value": 40
+        },
+        {
+            "key": ".launch",
+            "value": 11
+        },
+        {
+            "key": ".py",
+            "value": 6
+        },
+        {
+            "key": ".txt",
+            "value": 5
+        },
+        {
+            "key": ".xacro",
+            "value": 10
+        },
+        {
+            "key": ".yaml",
+            "value": 6
+        }
+    ],
+    "file_line_count": [
+        {
+            "key": ".cpp",
+            "value": 6620
+        },
+        {
+            "key": ".h",
+            "value": 5180
+        },
+        {
+            "key": ".hpp",
+            "value": 9711
+        },
+        {
+            "key": ".launch",
+            "value": 90
+        },
+        {
+            "key": ".py",
+            "value": 782
+        },
+        {
+            "key": ".txt",
+            "value": 7745
+        },
+        {
+            "key": ".xacro",
+            "value": 502
+        },
+        {
+            "key": ".yaml",
+            "value": 627
+        }
+    ]
+}

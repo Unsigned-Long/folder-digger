@@ -36,8 +36,20 @@ namespace ns_folger {
         [[nodiscard]]  std::map<std::string, std::size_t>
         GetFileLineCount(const std::set<std::string> &excludeFileType = {}) const;
 
+        [[nodiscard]]  std::map<std::string, std::vector<std::string>>
+        GetFiles(bool, const std::set<std::string> &includeFileType = {}) const;
+
+        [[nodiscard]]  std::map<std::string, std::size_t>
+        GetFileTypeCount(bool, const std::set<std::string> &includeFileType = {}) const;
+
+        [[nodiscard]]  std::map<std::string, std::size_t>
+        GetFileLineCount(bool, const std::set<std::string> &includeFileType = {}) const;
+
         [[nodiscard]] const FolderDigger &
         Save(const std::string &filename, const std::set<std::string> &excludeFileType = {}) const;
+
+        [[nodiscard]] const FolderDigger &
+        Save(bool, const std::string &filename, const std::set<std::string> &includeFileType = {}) const;
 
         [[nodiscard]] static FolderDigger Load(const std::string &filename);
 

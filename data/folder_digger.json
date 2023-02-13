@@ -1,18 +1,11 @@
 {
     "target_path": "/home/csl/CppWorks/artwork/folder-digger",
     "exclude_path": [
-        "/home/csl/CppWorks/artwork/folder-digger/.git",
         "/home/csl/CppWorks/artwork/folder-digger/.idea",
         "/home/csl/CppWorks/artwork/folder-digger/cmake-build-debug",
         "/home/csl/CppWorks/artwork/folder-digger/cmake-build-release"
     ],
     "files": [
-        {
-            "key": "",
-            "value": [
-                "/home/csl/CppWorks/artwork/folder-digger/.gitignore"
-            ]
-        },
         {
             "key": ".cpp",
             "value": [
@@ -29,7 +22,8 @@
         {
             "key": ".json",
             "value": [
-                "/home/csl/CppWorks/artwork/folder-digger/data/file_line_count.json"
+                "/home/csl/CppWorks/artwork/folder-digger/data/lic_calib.json",
+                "/home/csl/CppWorks/artwork/folder-digger/data/folder_digger.json"
             ]
         },
         {
@@ -48,10 +42,6 @@
     ],
     "file_type_count": [
         {
-            "key": "",
-            "value": 1
-        },
-        {
             "key": ".cpp",
             "value": 2
         },
@@ -61,7 +51,7 @@
         },
         {
             "key": ".json",
-            "value": 1
+            "value": 2
         },
         {
             "key": ".py",
@@ -74,24 +64,20 @@
     ],
     "file_line_count": [
         {
-            "key": "",
-            "value": 3
-        },
-        {
             "key": ".cpp",
-            "value": 127
+            "value": 205
         },
         {
             "key": ".h",
-            "value": 52
+            "value": 64
         },
         {
             "key": ".json",
-            "value": 101
+            "value": 502
         },
         {
             "key": ".py",
-            "value": 2
+            "value": 99
         },
         {
             "key": ".txt",

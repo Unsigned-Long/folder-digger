@@ -112,4 +112,56 @@ namespace ns_folger {
         return FolderDigger(tarPath, excludePath);
     }
 
+    std::map<std::string, std::vector<std::string>>
+    FolderDigger::GetFiles(bool, const std::set<std::string> &includeFileType) const {
+        std::map<std::string, std::vector<std::string>> files;
+        for (const auto &item: _files) {
+            if (includeFileType.find(item.first) != includeFileType.cend()) {
+                files.insert(item);
+            }
+        }
+        return files;
+    }
+
+    std::map<std::string, std::size_t>
+    FolderDigger::GetFileTypeCount(bool, const std::set<std::string> &includeFileType) const {
+        std::map<std::string, std::size_t> types;
+        for (const auto &item: _files) {
+            if (includeFileType.find(item.first) != includeFileType.cend()) {
+                types.insert({item.first, item.second.size()});
+            }
+        }
+        return types;
+    }
+
+    std::map<std::string, std::size_t>
+    FolderDigger::GetFileLineCount(bool, const std::set<std::string> &includeFileType) const {
+        std::map<std::string, std::size_t> types;
+        for (const auto &item: _files) {
+            if (includeFileType.find(item.first) != includeFileType.cend()) {
+                std::size_t lines = 0;
+                for (const auto &item2: item.second) { lines += FileLineCount(item2); }
+                types.insert({item.first, lines});
+            }
+        }
+        return types;
+    }
+
+    const FolderDigger &
+    FolderDigger::Save(bool, const std::string &filename, const std::set<std::string> &includeFileType) const {
+        const auto files = GetFiles(true, includeFileType);
+        const auto fileTypeCount = GetFileTypeCount(true, includeFileType);
+        const auto fileLineCount = GetFileLineCount(true, includeFileType);
+        std::ofstream file(filename);
+        cereal::JSONOutputArchive archive(file);
+        archive(
+                cereal::make_nvp("target_path", _tarPath),
+                cereal::make_nvp("exclude_path", _excludePath),
+                cereal::make_nvp("files", files),
+                cereal::make_nvp("file_type_count", fileTypeCount),
+                cereal::make_nvp("file_line_count", fileLineCount)
+        );
+        return *this;
+    }
+
 }
