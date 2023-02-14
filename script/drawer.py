@@ -65,12 +65,12 @@ def draw_bar(x_labels, y_values, ax, title):
 
 def func(pct, allvals):
     absolute = int(np.round(pct / 100. * np.sum(allvals)))
-    return "{:.1f}%\n({:d})".format(pct, absolute)
+    return "{:.1f}%".format(pct, absolute)
 
 
 def draw_pie(x_labels, y_values, ax, title):
     wedges, texts, autotexts = ax.pie(
-        y_values, autopct=lambda pct: func(pct, line_count), textprops=dict(color="w"),
+        y_values, autopct=lambda pct: func(pct, y_values), textprops=dict(color="w"),
         wedgeprops={"linewidth": 1, "edgecolor": "black"},
         colors=plt.get_cmap(color_name2)(np.linspace(0.0, 1.0, len(x_labels)))
     )
